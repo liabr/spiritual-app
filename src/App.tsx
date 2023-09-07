@@ -1,12 +1,13 @@
 import * as React from "react";
 import { NameEditComponent, ColorBrowser, ColorPicker } from "./components";
 import { Color } from "./models/color";
+import {Accordion} from "./components/HomePage";
 
 export const App = () => {
   const [name, setName] = React.useState("defaultUserName");
   const [editingName, setEditingName] = React.useState("defaultUserName");
   const [color, setColor] = React.useState<Color>({
-    red: 20,
+    red: 90,
     green: 40,
     blue: 180
   });
@@ -36,6 +37,7 @@ export const App = () => {
       onEditingUpdated={setEditingName}
       onNameUpdated={setUsernameState}
       disabled={editingName === ""|| editingName === name}/>
+      <Accordion></Accordion>
     </>
   );
 };

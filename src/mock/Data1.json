@@ -1,0 +1,21 @@
+{
+    "namesOfCities": [
+                        {
+                        "title": "Paris",
+                        "Etymology": "The tallest tower in Paris"
+                        },
+                        {
+                            "title": "Red Fort",
+                            "Etymology": "The tallest tower in Delhi"
+                        },
+                        {
+                            "title": "Qutub Minar",
+                            "Etymology": "Made by Qutumb ud din "
+                        },
+                        {
+                            "title": "Akbar Taj",
+                            "Etymology": "Made by Shah Jehan "
+                        }
+    ]   
+    
+}
