@@ -1,26 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import * as React from "react";
+import { NameEditComponent, ColorBrowser, ColorPicker } from "./components";
+import { Color } from "./models/color";
 
-function App() {
+export const App = () => {
+  const [name, setName] = React.useState("defaultUserName");
+  const [editingName, setEditingName] = React.useState("defaultUserName");
+  const [color, setColor] = React.useState<Color>({
+    red: 20,
+    green: 40,
+    blue: 180
+  });
+
+  const loadUsername = () => {
+    setTimeout(() => {
+      setName("name from async call");
+      setEditingName("name from async call");
+    }, 500);
+  };
+
+  React.useEffect(() => {
+    loadUsername();
+  }, []);
+
+  const setUsernameState = () => {
+    setName(editingName);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <ColorBrowser color={color} />
+      <ColorPicker color={color} onColorUpdated={setColor}/>
+      
+    </>
   );
-}
-
-export default App;
+};
