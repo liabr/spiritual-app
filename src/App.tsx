@@ -27,10 +27,17 @@ export const App = () => {
   };
 
   return (
-    <>
-      <ColorBrowser color={color} />
+    <>      
+      <ColorBrowser color={color} onColorUpdated={setColor} />
       <ColorPicker color={color} onColorUpdated={setColor}/>
-      
+      <NameEditComponent 
+      initialUserName={name}
+      editingName={editingName}
+      onEditingUpdated={setEditingName}
+      onNameUpdated={setUsernameState}
+      disabled={editingName === ""|| editingName == name}/>
     </>
   );
 };
+
+export default App;
