@@ -28,14 +28,14 @@ export const App = () => {
 
   return (
     <>      
-      <ColorBrowser color={color} onColorUpdated={setColor} />
+      <ColorBrowser color={color} onColorUpdated={setColor}  />
       <ColorPicker color={color} onColorUpdated={setColor}/>
       <NameEditComponent 
       initialUserName={name}
       editingName={editingName}
       onEditingUpdated={setEditingName}
       onNameUpdated={setUsernameState}
-      disabled={editingName === ""|| editingName == name}/>
+      disabled={editingName === ""|| editingName === name}/>
     </>
   );
 };
