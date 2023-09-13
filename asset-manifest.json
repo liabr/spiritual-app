@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/spiritual-app/static/css/main.3f2c87d1.css",
+    "main.js": "/spiritual-app/static/js/main.dc43a641.js",
+    "static/js/787.276cb9cf.chunk.js": "/spiritual-app/static/js/787.276cb9cf.chunk.js",
+    "index.html": "/spiritual-app/index.html",
+    "main.3f2c87d1.css.map": "/spiritual-app/static/css/main.3f2c87d1.css.map",
+    "main.dc43a641.js.map": "/spiritual-app/static/js/main.dc43a641.js.map",
+    "787.276cb9cf.chunk.js.map": "/spiritual-app/static/js/787.276cb9cf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3f2c87d1.css",
+    "static/js/main.dc43a641.js"
+  ]
+}
